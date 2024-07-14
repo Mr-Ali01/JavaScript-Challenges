@@ -50,3 +50,6 @@ if(c!=b){
 // 5. Ternary Operations
 const e = c<d? "yes": "No";
 console.log(e);
+let x = -10
+let y = x? "Negative number": "Positive number"
+console.log(y);
