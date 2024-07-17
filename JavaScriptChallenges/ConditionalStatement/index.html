@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional-Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="pos-neg">
+            <input type="tel" class="input-box">
+            <button type="submit" class="sub-button">Check</button>
+            <p class="num"></p>
+        </div>
+        <div class="voter-box">
+            <input type="text" class="voter">
+            <button type="submit" class="voter-age">Check</button>
+            <p id="vote"></p>
+        </div>
+    </div>
+    <script>
+        // const number = document.querySelector(".input-box");
+        // const button = document.querySelector(".sub-button");
+        // let nums = document.querySelector(".num");
+        // button.addEventListener('click', function(){
+        //     if(number.value > 0){
+        //         nums.innerHTML="This number is Positive";
+        //     } else if(number.value < 0) {
+        //         nums.innerHTML="This number is Negative";
+        //     } else{
+        //         nums.innerHTML="Please enter a vailid number";
+        //     }
+        // })
+        const voterAge = document.querySelector(".voter");
+        const ageButton = document.querySelector(".voter-age");
+        const Eligible = document.querySelector("#vote");
+        ageButton.addEventListener('click', function(){
+            if(voterAge.value >= 18){
+                Eligible.innerHTML="You eligible for vote";
+            } else {
+                Eligible.innerHTML="You not eligible for vote";
+            }
+        })
+    </script>
+</body>
+</html>
